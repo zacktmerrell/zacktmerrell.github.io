@@ -77,7 +77,7 @@ header ul li a { /* for links we need additional styling */
 #circle {
 	width: 250px;
 	height: 250px;
-	background-image: url("../images/profile-.png"); /* RH EDIT*/
+	background-image: url("../images/prof.png"); /* RH EDIT*/
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 250px;
