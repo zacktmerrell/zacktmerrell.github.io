@@ -77,12 +77,12 @@ header ul li a { /* for links we need additional styling */
 #circle {
 	width: 250px;
 	height: 250px;
-	background-image: url("../images/profile.png"); /* RH EDIT*/
+	background-image: url("../images/profile-.png"); /* RH EDIT*/
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 250px;
 	margin: 0 auto;
-	opacity: 0.8;
+	
 }
 
 .about p {
@@ -165,7 +165,12 @@ footer p{
 }	
 	
 #statement {
-	padding-top: 75px
+	padding-top: 75px;
+	padding-left: 50px;
+	padding-right: 50px;
+	letter-spacing: 3px;
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 #Art1 {
