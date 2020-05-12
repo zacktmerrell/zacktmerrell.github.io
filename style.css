@@ -91,6 +91,10 @@ footer a {
   position: relative;
 }
 
+.imagegroup2 {
+  width:70%;
+}
+
 .imagegroup img {
   display: block;
   padding-bottom: 8px;
