@@ -13,12 +13,26 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   width: 100vw;
+  color: #fff;
 }
 
 .container {
   width: 85vw;
   height: auto;
   margin: 0 auto;
+}
+
+.main-logo {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 10px;
+    margin-top: 55px;
+    text-decoration: none;
+    color: #fff;
 }
 
 #interactive {
@@ -28,16 +42,91 @@ body {
   z-index: -999; /*order send to back*/
 }
 
+#hometext {
+  font-size: 28px;
+  font-weight: lighter;
+  color: #fff;
+  padding-top: 50px;
+
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+a.link {
+  text-decoration: none;
+  font-size: 26px;
+  color: #ec42ff;
+}
+
 h1 {
   color: #fff;
   padding: 45px;
   padding-left:0;
+  letter-spacing: 10px;
+  font-weight: 900;
+}
+
+h2 {
+  color: #fff;
+  padding-left: 0px;
+  padding-right: 25px;
+  font-size: 36pt;
+  font-weight: 900;
+}
+
+.main-container {
+  padding-top: 125px;
+  width: 23%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.typewriter-text {
+  overflow: hidden;
+  position: relative;
+  width: 18.7em;
+  height: 3.5em;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+
+  animation: typewriter 1.5s steps(25) 1s 1 normal both,
+  blinkTextCursor 700ms steps(25) infinite normal;
+}
+
+@keyframes typewriter {
+  from{
+    width: 0;
+  }
+
+  to {
+    width: 18.7em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from{
+    border-right-color: rgba(255, 255, 255, 0.75)
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+#index {
+  margin-top: -230px;
 }
 
 ul {
 color: #fff;
 float: right;
-margin-top: -90px;
+margin-top: 45px;
 }
 
 ul li {
@@ -52,7 +141,7 @@ ul li a {
 }
 
 .effect:hover {
-  color: #22ff00;
+  color: #5c5c5c;
   transition: 0.5s;
   font-weight: bold;
 }
@@ -66,7 +155,7 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  padding: 50px;
+  padding-bottom: 25px;
   font-size: 2em;
 }
 
@@ -81,23 +170,56 @@ footer a {
 
 /* PORTFOLIO PAGE STYLES */
 
+.heading {
+  padding: 0 0 50px 0;
+}
+
+.heading-cont {
+  padding: 0 100px;
+  margin: 50px 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.heading .intro-text {
+  font-size: 3em;
+  letter-spacing: 5px;
+  color: #fff;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+
+
+
+.gallery {
+  height: auto;
+  margin: 0 auto;
+}
+
 .imagegroup {
-  width:32%;
+  width: 49.89%;
   color: #fff;
   display: inline-block;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   text-align: center;
   font-style: italic;
   position: relative;
 }
 
 .imagegroup2 {
-  width:70%;
+  width: 33.18%;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 0px;
+  text-align: center;
+  font-style: italic;
+  position: relative;
 }
 
+
 .imagegroup img {
-  display: block;
-  padding-bottom: 8px;
+
 }
 
 .selected {
@@ -107,6 +229,7 @@ footer a {
 
 .overlay {
   color: #fff;
+  background-color: #f5f5f5;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -122,10 +245,14 @@ footer a {
   opacity: 100%;
 }
 
+.imagegroup2:hover .overlay {
+  opacity: 100%;
+}
+
 .text {
-  color: white;
+  font-size: 25pt;
+  color: black;
   position: absolute;
-  background-color: #333;
   padding:5px;
   top: 50%;
   left: 50%;
@@ -138,6 +265,21 @@ footer a {
 .footerflex {
   position: relative;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ABOUT PAGE STYLES */
 .twocolumns {
