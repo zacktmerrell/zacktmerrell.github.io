@@ -286,6 +286,12 @@ footer a {
 
 
 /* ABOUT PAGE STYLES */
+.container2 {
+  width: 85vw;
+  height: auto;
+  margin: 0 auto 50pt auto;
+}
+
 .twocolumns {
   width: 100%;
 }
@@ -299,6 +305,7 @@ footer a {
   width: 48%;
   color: #fff;
   float: right;
+  font-size: 18pt;
 }
 
 button {
@@ -308,7 +315,7 @@ button {
   border: solid #fff 2px;
   color: #fff;
   border-radius: 10px;
-  font-size: 1em;
+  font-size: .75em;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
