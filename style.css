@@ -60,13 +60,7 @@ a.link {
   color: #ec42ff;
 }
 
-h1 {
-  color: #fff;
-  padding: 45px;
-  padding-left:0;
-  letter-spacing: 10px;
-  font-weight: 900;
-}
+
 
 h2 {
   color: #fff;
@@ -328,9 +322,12 @@ button:hover {
 
 
 /* ARTWORK PAGE STYLES */
-h2 {
+
+h1 {
   color: #fff;
-  margin-bottom: 30px;
+  padding: 20px;
+  padding-left:0;
+  font-weight: 900;
 }
 
 h4 {
