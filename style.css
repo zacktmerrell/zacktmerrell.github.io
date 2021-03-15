@@ -171,7 +171,7 @@ footer a {
 /* PORTFOLIO PAGE STYLES */
 
 .heading {
-  padding: 0 0 50px 0;
+  padding: 0 0 0 0;
 }
 
 .heading-cont {
@@ -186,6 +186,14 @@ footer a {
   letter-spacing: 5px;
   color: #fff;
   font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.heading .intro-text2 {
+  font-size: 15pt;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: normal;
   margin-bottom: 10px;
 }
 
@@ -250,7 +258,9 @@ footer a {
 }
 
 .text {
-  font-size: 25pt;
+  font-size: 35pt;
+  font-weight: bold;
+  font-style: normal;
   color: black;
   position: absolute;
   padding:5px;
