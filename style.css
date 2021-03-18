@@ -84,10 +84,11 @@ h2 {
 .typewriter-text {
   overflow: hidden;
   position: relative;
-  width: 18.7em;
+  max-width: 18.7em;
   height: 3.5em;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
+  width: auto;
 
   animation: typewriter 1.5s steps(25) 1s 1 normal both,
   blinkTextCursor 700ms steps(25) infinite normal;
@@ -200,23 +201,27 @@ footer a {
 }
 
 .imagegroup {
-  width: 49.89%;
+  width: 49.5%;
   color: #fff;
   display: inline-block;
   padding-bottom: 0px;
   text-align: center;
   font-style: italic;
   position: relative;
+  max-width: 100%;
+  height: auto;
 }
 
 .imagegroup2 {
-  width: 33.18%;
+  width: 33%;
   color: #fff;
   display: inline-block;
   padding-bottom: 0px;
   text-align: center;
   font-style: italic;
   position: relative;
+  max-width: 100%;
+  height: auto;
 }
 
 
