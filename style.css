@@ -271,6 +271,20 @@ footer a {
   text-align: center;
 }
 
+.text1 {
+  font-size: 20pt;
+  font-style: normal;
+  color: black;
+  position: absolute;
+  padding:5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .footerflex {
   position: relative;
 }
@@ -298,7 +312,7 @@ footer a {
 }
 
 .twocolumns {
-  width: 100%;
+  width: 95%;
 }
 
 #me {
@@ -310,7 +324,19 @@ footer a {
   width: 48%;
   color: #fff;
   float: right;
+  font-size: 14pt;
+  margin-bottom: 12pt;
+  letter-spacing: 2px;
+}
+
+#bio1 {
+  width: 48%;
+  color: #fff;
+  float: right;
   font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 16pt;
+  letter-spacing: 5px;
 }
 
 button {
