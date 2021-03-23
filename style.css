@@ -289,6 +289,13 @@ footer a {
   position: relative;
 }
 
+.icons {
+  color: #fff;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 25px;
+  font-size: 2em;
+}
 
 
 
