@@ -1,0 +1,100 @@
+ArrayList<Particle> parts = new ArrayList();
+float r;
+color k;
+float mx, my;
+color rcolor() { 
+  return(color(random(255), random(255), random(255)));
+}
+ 
+void setup() {
+  size(400, 400);
+  ellipseMode(CENTER);
+  for ( int i=0; i < 200; i++) {
+    parts.add( new Particle( random(width), random(height), rcolor() ) );
+  }
+  noStroke();
+}
+ 
+void draw() {
+  background(0);
+  for ( int i=0; i < parts.size (); i++) {
+    parts.get(i).draw();
+  }
+  if (mousePressed) {
+    r++;
+    fill(k, 10);
+    stroke(k);
+    ellipse(mx, my, r*2, r*2);
+  }
+}
+ 
+void mousePressed() {
+  mx=mouseX;
+  my=mouseY;
+  k = rcolor();
+  r=0;
+}
+ 
+void mouseReleased() {
+  for ( int i=0; i < parts.size (); i++) {
+    parts.get(i).joinZone(mx, my, r, k);
+  }
+}
+ 
+class Particle {
+  float px, py, vx, vy;
+  color c;
+  boolean isZoned;
+  float zx, zy, zr;
+  color zc;
+  Particle(float ipx, float ipy, color ic) { 
+    px=ipx;
+    py=ipy;
+    vx = random(-1, 1);
+    vy = random(-1, 1);
+    c=ic;
+    isZoned = false;
+  }
+ 
+  void move() {
+    float tpx = px;
+    float tpy = py; 
+    px+=vx; 
+    py+=vy;
+    px+=width;
+    py+=height;
+    px%=width;
+    py%=height;
+    if (isZoned) {
+      if (dist(px, py, zx, zy)>zr) {
+        px = tpx;
+        py = tpy;
+        vx = random(-1, 1);
+        vy = random(-1, 1);
+      }
+      if (dist(px, py, zx, zy)>zr) {
+        if (px>zx)px--;
+        if (px<zx)px++;
+        if (py>zy)py--;
+        if (py<zy)py++;
+      }
+    }
+  }
+  void draw() {
+    move();
+    fill(c);
+    if (isZoned) fill(zc);
+    noStroke();
+    rect(px, py, 5, 5);
+
+  }
+  void joinZone(float izx, float izy, float izr, color izc) {
+    if (dist(px, py, izx, izy)<izr) {
+      zx = izx;
+      zy = izy;
+      zr = izr;
+      zc = izc;
+      isZoned = true;
+    }
+  }
+}

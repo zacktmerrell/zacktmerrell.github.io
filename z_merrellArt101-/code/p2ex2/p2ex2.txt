@@ -1,0 +1,40 @@
+Ball ball1;
+Ball ball2;
+
+ void setup () {
+    size (800, 400);
+    smooth();
+    noStroke();
+    
+    ball1 = new Ball (80);
+    ball2 = new Ball (60);
+}
+
+void draw () {
+  ball1.display();
+  ball2.display();
+  
+  //saveFrame("ZMex4-#####.png");
+}
+
+
+class Ball {
+  
+  color[] randomColor = {#2EF502, #FF03E2, #03F9FF, #FFAAAA, #AFFFB2};
+  int picker = 0;
+  int size;
+  
+  Ball (int tempSize) {
+    size = tempSize;
+  }
+
+  void display() {
+    fill(randomColor[picker]);
+    ellipse (mouseX, mouseY, size, size);
+    if (mousePressed) {
+      picker = round(random (0,4));
+    println(mouseX, mouseY);
+  }
+}
+
+}

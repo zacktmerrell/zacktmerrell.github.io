@@ -1,0 +1,108 @@
+PImage p;
+PImage p1;
+PImage p2;
+PImage p3;
+PImage p4;
+PImage p5;
+PImage p6;
+PImage p7;
+PImage p8;
+PImage p9;
+
+int value = 0;
+
+void setup() {
+  size (800,800);
+  smooth();
+  colorMode (HSB, 100);
+  background(100);
+  p = loadImage ("Kirby.jpg");
+  p1 = loadImage ("Kirby1.jpeg");
+  p2 = loadImage ("Kirby2.jpeg");
+  p3 = loadImage ("Kirby3.jpg");
+  p4 = loadImage ("Kirby4.jpg");
+  p5 = loadImage ("Kirby5.jpeg");
+  p6 = loadImage ("Kirby6.jpg");
+  p7 = loadImage ("Kirby7.jpg");
+  p8 = loadImage ("Kirby8.jpeg");
+  p9 = loadImage ("Kirby9.jpg");
+}
+
+
+void draw() {
+  
+  float zack = dist(pmouseX, pmouseY, mouseX, mouseY);
+  
+  if (mousePressed == true) {
+    if (zack > 10) {
+      zack = 10;
+    }
+    strokeWeight(12-zack);
+    line(pmouseX, pmouseY, mouseX, mouseY);
+  }
+  
+  if (keyPressed == true) {
+    value+=1;
+}
+  if (value > 10) {
+    value = 0;
+}
+
+
+saveFrame("ZMproj1-#####");
+}
+
+
+void mousePressed() {
+  colorMode (HSB, 100);
+  float x = random(125);
+  println (x);
+ stroke(x,100,75); 
+}
+
+
+void keyPressed() {
+  println (value);
+  
+  if (key == 'b') {
+     background(100); 
+   }
+   
+ if (key == ' ') {
+   if (value == 0) {
+     image (p,width/4,height/4,width/2,height/2);
+   }
+   if (value == 1) {
+     image (p1,width/4,height/4,width/2,height/2);
+   }
+   if (value == 2) {
+     image (p2,width/4,height/4,width/2,height/2);
+   }
+   if (value == 3) {
+     image (p3,width/4,height/4,width/2,height/2);
+   }
+   if (value == 4) {
+     image (p4,width/4,height/4,width/2,height/2);
+   }
+   if (value == 5) {
+     image (p5,width/4,height/4,width/2,height/2);
+   }
+   if (value == 6) {
+     image (p6,width/4,height/4,width/2,height/2);
+   }
+   if (value == 7) {
+     image (p7,width/4,height/4,width/2,height/2);
+   }
+   if (value == 8) {
+     image (p8,width/4,height/4,width/2,height/2);
+   }
+   if (value == 9) {
+     image (p9,width/4,height/4,width/2,height/2);
+   }
+   if (value == 10) {
+     background(100);
+   }
+   
+ }
+ 
+ }
