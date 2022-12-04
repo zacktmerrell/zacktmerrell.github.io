@@ -26,7 +26,7 @@ body {
     display: inline-block;
     text-transform: uppercase;
     font-family: 'Montserrat';
-    font-size: 30px;
+    font-size: 1.25vw;
     font-weight: 900;
     line-height: 40px;
     letter-spacing: 10px;
@@ -116,6 +116,7 @@ h2 {
 
 #index {
   margin-top: -230px;
+  width: 22vw;
 }
 
 ul {
@@ -142,7 +143,7 @@ ul li a {
 }
 
 #about {
-  padding-right:0;
+
 }
 
 footer {
