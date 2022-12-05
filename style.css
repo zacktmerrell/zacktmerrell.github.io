@@ -114,9 +114,13 @@ h2 {
   }
 }
 
-#index {
+#indexmain {
   margin-top: -230px;
-  width: 22vw;
+  width: 21vw;
+}
+
+#index {
+  width: 21vw;
 }
 
 ul {
@@ -178,7 +182,7 @@ footer a {
 }
 
 .heading .intro-text {
-  font-size: 3em;
+  font-size: 1.8vw;
   letter-spacing: 5px;
   color: #fff;
   font-weight: bolder;
