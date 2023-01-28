@@ -119,13 +119,14 @@ h2 {
 }
 
 #index {
+max-width: 50vw;
 
 }
 
 ul {
 color: #fff;
 float: right;
-margin-top: 45px;
+margin-top: 50px;
 }
 
 ul li {
