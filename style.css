@@ -328,27 +328,30 @@ footer a {
 }
 
 #me {
-  width: 48%;
+  margin-left: 19vw;
+  width:25%;
   float: left;
 }
 
 #bio {
-  width: 48%;
+  width: 35%;
   color: #fff;
   float: right;
   font-size: 14pt;
   margin-bottom: 12pt;
   letter-spacing: 2px;
+  margin-right: 15vw;
 }
 
 #bio1 {
-  width: 48%;
+  width: 35%;
   color: #fff;
   float: right;
   font-size: 18pt;
   font-weight: bold;
   margin-bottom: 16pt;
   letter-spacing: 5px;
+  margin-right:15vw;
 }
 
 button {
